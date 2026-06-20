@@ -1,10 +1,11 @@
-import react from "react";
+import Section from "./common/Section";
+import { Typography } from "@mui/material";
 
 const Skills = () => {
   return (
-    <>
-      <h2> Skills </h2>
-    </>
+    <Section id="skills">
+      <Typography variant="h3">Skills</Typography>
+    </Section>
   );
 };
 
