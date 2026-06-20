@@ -1,17 +1,23 @@
 import { Box } from "@mui/material";
-
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 
 const MainLayout = ({ children }) => {
   return (
-    <Box minHeight="100vh">
+    <>
       <Navbar />
 
-      <Box component="main">{children}</Box>
+      <Box
+        component="main"
+        sx={{
+          pt: "80px",
+        }}
+      >
+        {children}
+      </Box>
 
       <Footer />
-    </Box>
+    </>
   );
 };
 
