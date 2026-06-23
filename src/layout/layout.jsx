@@ -9,9 +9,9 @@ const MainLayout = ({ children }) => {
 
       <Box
         component="main"
-        // sx={{
-        //   pt: "10px",
-        // }}
+        sx={{
+          pt: "10px",
+        }}
       >
         {children}
       </Box>
