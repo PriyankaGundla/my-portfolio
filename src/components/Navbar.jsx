@@ -2,7 +2,15 @@ import React from "react";
 import { AppBar, Toolbar, Typography, Button, Box } from "@mui/material";
 import FileDownloadIcon from "@mui/icons-material/FileDownload";
 
-const navItems = ["About", "Skills", "Projects", "Experience", "Contact"];
+const navItems = [
+  "Home",
+  "About",
+  "Skills",
+  "Projects",
+  "Experience",
+  "Resume",
+  "Contact",
+];
 
 const Navbar = () => {
   const handleScroll = (id) => {
@@ -40,22 +48,22 @@ const Navbar = () => {
             justifyContent: "flex-start",
           }}
         >
-          <Typography
-            variant="h5"
+          <Box
             sx={{
-              fontFamily: "cursive",
-              fontWeight: 700,
+              width: 42,
+              height: 42,
+              borderRadius: "12px",
+              background: "linear-gradient(135deg, #00E5FF, #0091EA)",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
               color: "#fff",
-              cursor: "pointer",
-              fontSize: {
-                xs: "1.1rem",
-                sm: "1.3rem",
-                md: "1.5rem",
-              },
+              fontWeight: 700,
+              fontSize: "18px",
             }}
           >
-            Priyanka Gundla
-          </Typography>
+            PG
+          </Box>
         </Box>
 
         {/* Center Section - Desktop Only */}
@@ -108,45 +116,23 @@ const Navbar = () => {
             gap: 2,
           }}
         >
-          {/* Desktop Only */}
-          <Button
-            variant="outlined"
-            sx={{
-              display: {
-                xs: "none",
-                md: "inline-flex",
-              },
-              whiteSpace: "nowrap",
-              minWidth: "fit-content",
-              color: "#fff",
-              borderColor: "rgba(255,255,255,0.2)",
-              textTransform: "none",
-              px: 2,
-              "&:hover": {
-                borderColor: "#fff",
-              },
-            }}
-          >
-            View Work
-          </Button>
-
           {/* All Screens */}
           <Button
-            variant="outlined"
+            variant="contained"
             sx={{
+              background: "linear-gradient(135deg, #00E5FF, #0091EA)",
               color: "#fff",
-              borderColor: "rgba(255,255,255,0.2)",
               textTransform: "none",
-              px: {
-                xs: 2,
-                md: 3,
-              },
+              px: 3,
+              borderRadius: "12px",
+              boxShadow: "0 4px 20px rgba(0,229,255,0.3)",
               "&:hover": {
-                borderColor: "#fff",
+                background: "linear-gradient(135deg, #00C4E8, #0077C2)",
+                boxShadow: "0 6px 25px rgba(0,229,255,0.4)",
               },
             }}
           >
-            <FileDownloadIcon sx={{ color: "#fff", mr: 1 }} />
+            <FileDownloadIcon sx={{ mr: 1 }} />
             Resume
           </Button>
         </Box>
