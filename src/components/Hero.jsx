@@ -15,40 +15,21 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import EmailIcon from "@mui/icons-material/Email";
 
-const stats = [
-  {
-    value: "2+",
-    label: "Years Experience",
-  },
-  {
-    value: "Neo4j",
-    label: "Certified Professional",
-  },
-  {
-    value: "10+",
-    label: "Projects Built",
-  },
-  {
-    value: "React.js",
-    label: "Specialist",
-  },
-];
-
 const Hero = () => {
   return (
     <Box
       id="home"
       sx={{
-        minHeight: "100vh",
+        minHeight: "auto",
         position: "relative",
         overflow: "hidden",
-
+        mb: 10,
         pt: {
           xs: 8,
           sm: 10,
           md: 12,
         },
-
+        mb: 5,
         background: `
           linear-gradient(rgba(255,255,255,0.04) 1px, transparent 1px),
           linear-gradient(90deg, rgba(253, 241, 241, 0.04) 1px, transparent 1px)
@@ -205,7 +186,7 @@ const Hero = () => {
           spacing={2}
           alignItems="center"
           flexWrap="wrap"
-          mb={6}
+          mb={2}
         >
           {/* Download Resume */}
           <Button
