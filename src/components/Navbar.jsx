@@ -6,9 +6,8 @@ const navItems = [
   "Home",
   "About",
   "Skills",
-  "Projects",
   "Experience",
-  "Resume",
+  "Projects",
   "Contact",
 ];
 

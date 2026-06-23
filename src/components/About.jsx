@@ -58,10 +58,14 @@ const About = () => {
 
           <Typography
             sx={{
-              color: "#A0A0A0",
-              fontSize: "1.1rem",
-              lineHeight: 2,
-              mb: 4,
+              color: "#808080",
+              maxWidth: "800px",
+              lineHeight: 1.8,
+              mb: 5,
+              fontSize: {
+                xs: "1rem",
+                md: "1.15rem",
+              },
             }}
           >
             I'm a Full Stack Developer with 2+ years of experience developing
